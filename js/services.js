@@ -20,7 +20,6 @@ angular.module('todo').factory('todoStorage', function() {
 
     get: function() {
       // storage.todos = stroage._getFromLocalStorage();
-      // 데이터가 없을 경우에는 빈 문자열을 리턴해라 라는 의미입니다.
       angular.copy(storage._getFromLocalStorage(), storage.todos);
       return storage.todos;
     },
